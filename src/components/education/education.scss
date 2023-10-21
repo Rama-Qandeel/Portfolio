@@ -1,0 +1,66 @@
+@import "../../global.scss";
+
+.education {
+  .wrapper {
+    margin: 74px 55.8px;
+
+    header {
+      display: flex;
+      justify-content: center;
+      font-size: 32px;
+      text-indent: 14px;
+
+      & span {
+        color: $mainColor;
+      }
+    }
+    .infoContainer {
+      display: flex;
+      margin-top: 50px;
+      flex: 0.5 1;
+
+      .left {
+        flex: 0.5 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        header {
+          color: $mainColor;
+        }
+        .line {
+          border-bottom: 1px solid #cccccc;
+          width: 80%;
+          margin-top: 20px;
+        }
+
+        .details {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 80%;
+
+          .text {
+            font-size: 21px;
+          }
+
+          .date {
+            background-color: #F1F1F1;
+            width: 116px;
+            padding: 12px 12px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+        }
+
+        p {
+          font-size: 14px;
+          color: #646563;
+        }
+      }
+    }
+  }
+}

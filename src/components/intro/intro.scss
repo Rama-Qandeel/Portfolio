@@ -1,0 +1,137 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 55.8px;
+
+    .btn {
+      width: 64px;
+      height: 30px;
+      border: 1px solid #3d3f3c;
+      border-radius: 999em;
+      margin-bottom: 15px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        color: #3d3f3c;
+        font-size: 14px;
+      }
+    }
+
+    .wrapper {
+      margin-bottom: 23px;
+
+      h2 {
+        font-size: 40px;
+        color: #ff6000;
+        letter-spacing: 1.4px;
+
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        color: #3d3f3c;
+        font-size: 30px;
+      }
+
+      h3:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      span {
+        font-size: inherit;
+        color: $mainColor;
+      }
+
+      .ityped-cursor {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    p {
+      color: #888887;
+      margin-bottom: 65px;
+      max-width: 58%;
+    }
+
+    .btnContainer {
+      display: flex;
+      overflow: hidden;
+      height: 46px;
+
+      .switch {
+        display: flex;
+        position: relative;
+        margin-right: 17px;
+        width: 226px;
+        overflow: hidden;
+      }
+
+      .btnOn {
+        width: 157px;
+        height: 100%;
+        background-color: $mainColor;
+        border: none;
+        position: absolute;
+        left: 68px;
+
+        span {
+          color: white;
+          font-size: 16px;
+        }
+      }
+
+      .btnOff {
+        width: 157px;
+        height: 100%;
+        background-color: #3d403c;
+        border: none;
+      }
+
+      .btn {
+        height: 100%;
+      }
+
+      .btnWidth {
+        width: 97px;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    background: #e7c9af;
+    clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%);
+    border-bottom-right-radius: 62px;
+
+    .imgGirl {
+      width: 70%;
+      height: 70%;
+    }
+  }
+}

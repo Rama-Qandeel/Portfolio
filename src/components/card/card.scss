@@ -1,0 +1,77 @@
+@import "../../global.scss";
+
+.cardWrapper {
+  width: 270px;
+  height: 352px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #50524f;
+  transition: all .8s ease-in;
+
+  &:hover {
+    background-color: $mainColor;
+    border-bottom-left-radius: 138px;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 12px;
+
+
+    .h3 {
+      color: $mainColor;
+      font-size: 25px;
+      font-weight: 400;
+      transition: all .8s ease-out;
+    }
+
+    .arrow{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #6B6D6A;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+  }
+
+  &:hover .h3 {
+    color: white;
+  }
+
+  .line {
+    border-bottom: 1px solid #5E605D;
+    margin-bottom: 21px;
+  }
+
+  p{
+    color: #D5D6D5;
+    margin: 26px 12px;
+    font-size: 16px;
+  }
+
+  .imgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 90%;
+      height: 153px;
+      background-size: cover;
+      object-fit: fill;
+      border-radius: 18px;
+      transition: all .8s ease-in;
+    }
+  }
+
+  &:hover img {
+    border-bottom-left-radius: 138px;
+  }
+}
